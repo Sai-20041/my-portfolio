@@ -332,6 +332,26 @@ h3{
   .contact-right, .contact-left {
     width: 100%;
   }
+  
+  /* Projects mobile styles */
+  .projects-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+  
+  .project-card {
+    margin: 0 auto;
+  }
+  
+  .project-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 120px;
+    text-align: center;
+  }
 }
 /* ---------- Advanced Contact Section ---------- */
 #contact {
@@ -411,6 +431,23 @@ h3{
     line-height: 1.5;
     color: #cfcfcf;
     margin-bottom: 12px;
+}
+
+/* Tech Stack */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.project-tech span {
+    background: rgba(0, 234, 255, 0.1);
+    color: #00eaff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* Buttons */
