@@ -22,13 +22,18 @@
   <img src="images/2.jpg" class="Logo">
   
   
-  <ul>
+  <ul id="nav-menu">
     <li><a href="#header">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
 
         <div class="header-text">
@@ -249,6 +254,13 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        const hamburger = document.querySelector('.hamburger');
+        menu.classList.toggle('active');
+        hamburger.classList.toggle('active');
       }
   
 </script>
